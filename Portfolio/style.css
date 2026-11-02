@@ -7,26 +7,26 @@
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
 
 /* A little more breathing room in the reading rhythm. */
-body{font-size:16px}
+body{font-size:25px}
 .nav-link,.nav-cta{font-size:13px}
 .eyebrow{font-size:11px}
 .hero-role{font-size:14px}
-.hero-description{font-size:15px}
+.hero-description{font-size:17px}
 .button,.resume-link,.text-link{font-size:13px}
-.section-aside{font-size:13px}
-.about-content{font-size:14px}
-.about-content .about-lead{font-size:16px}
-.project-body>p{font-size:12px}
-.feature-list{font-size:11px}
+.section-aside{font-size:15px}
+.about-content{font-size:16px}
+.about-content .about-lead{font-size:18px}
+.project-body>p{font-size:14px}
+.feature-list{font-size:13px}
 .tag-list span{font-size:10px}
 .project-links a{font-size:11px}
 .skill-group h3{font-size:15px}
-.skill-group p{font-size:11px}
+.skill-group p{font-size:13px}
 .skill-items>span{font-size:11px}
 .profile-card-copy small{font-size:9px}
 .profile-card-copy strong{font-size:15px}
-.profile-card-copy em,.profile-note p{font-size:11px}
-.contact-intro>p:not(.eyebrow){font-size:13px}
+.profile-card-copy em,.profile-note p{font-size:13px}
+.contact-intro>p:not(.eyebrow){font-size:15px}
 .contact-details>a,.contact-details>span{font-size:12px}
 .contact-socials a{font-size:11px}
 .contact-form label{font-size:11px}
@@ -48,4 +48,118 @@ body{font-size:16px}
 .hero-socials a:nth-child(3):hover{color:#f4b45f;border-color:#c68b3e}
 .hero-socials a:hover svg,.hero-socials a:focus-visible svg{transform:scale(1.13)}
 .lc-logo svg{width:19px;height:19px}
-@media(max-width:680px){.hero-description{font-size:14px}.section-aside{font-size:12px}.about-content{font-size:13px}.about-content .about-lead{font-size:15px}.project-body>p{font-size:11px}.skill-group p{font-size:10px}.contact-intro>p:not(.eyebrow){font-size:12px}}
+@media(max-width:680px){.hero-description{font-size:16px}.section-aside{font-size:14px}.about-content{font-size:15px}.about-content .about-lead{font-size:17px}.project-body>p{font-size:13px}.feature-list{font-size:12px}.skill-group p{font-size:12px}.contact-intro>p:not(.eyebrow){font-size:14px}}
+
+/* Streamify preview: spacious cinematic streaming dashboard. */
+.project-stream{grid-template-columns:minmax(0,1.18fr) minmax(340px,.82fr);min-height:430px}
+.project-stream .project-visual{min-width:0;min-height:430px;height:100%}
+.stream-visual{padding:22px;background:radial-gradient(ellipse at 48% 44%,#303949,#15191f 76%)}
+.stream-app{width:100%;max-width:650px;overflow:hidden;border:1px solid #3a414b;border-radius:12px;background:#101318;box-shadow:0 26px 70px #0008}
+.stream-top{height:45px;gap:18px;padding:0 16px;border-bottom:1px solid #272c34}
+.stream-logo{font-size:12px;letter-spacing:-.035em}
+.stream-logo i{font-size:12px}
+.stream-search{height:25px;max-width:250px;flex:1;padding:4px 9px;border:1px solid #303640;border-radius:5px;background:#171b21;font-size:8px}
+.stream-user{width:22px;height:22px;margin-left:auto;font-size:8px}
+.stream-cats{height:34px;gap:18px;padding:0 16px;font-size:8px}
+.stream-cats span{height:34px}
+.stream-feature{position:relative;min-height:227px;overflow:hidden;background:#222a36}
+.stream-feature>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 48%}
+.stream-feature-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,11,15,.92),rgba(8,11,15,.58) 40%,rgba(8,11,15,.02) 82%),linear-gradient(0deg,rgba(8,11,15,.55),transparent 45%)}
+.stream-feature-copy{position:absolute;z-index:1;right:18px;bottom:18px;left:22px;max-width:280px}
+.stream-original{color:#d1b98a;font:7px var(--mono);letter-spacing:.12em}
+.stream-feature-copy h4{margin:5px 0 3px;color:#fff;font-size:clamp(17px,2vw,25px);font-weight:600;line-height:1.1;letter-spacing:-.04em}
+.stream-feature-copy p{margin:0 0 10px;color:#d2d5da;font-size:8px;line-height:1.5}
+.stream-play{display:inline-flex;align-items:center;gap:6px;padding:6px 9px;border-radius:4px;background:#f1f2f4;color:#15171b;font-size:8px;font-weight:700}
+.stream-play b{font-size:7px}
+.stream-play small{margin-left:5px;color:#f3f4f5;font-size:8px;font-weight:500}
+.stream-feature-rating{position:absolute;right:12px;bottom:12px;color:#fff;font-size:7px;text-shadow:0 1px 5px #000}
+.stream-continue{padding:10px 13px 13px}
+.stream-continue-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:7px;color:#edf0f4;font-size:8px}
+.stream-continue-title span{color:#aeb7c4;font-size:7px}
+.stream-mini-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.stream-mini{position:relative;display:flex;min-height:55px;flex-direction:column;justify-content:flex-end;gap:2px;overflow:hidden;padding:6px;border-radius:4px;background:linear-gradient(145deg,#567280,#202832 72%)}
+.stream-mini::before{position:absolute;inset:0;content:"";background:linear-gradient(0deg,rgba(8,11,15,.8),transparent 85%)}
+.stream-mini span,.stream-mini b{position:relative;z-index:1;color:#fff}
+.stream-mini span{font:5px var(--mono);letter-spacing:.08em;opacity:.8}
+.stream-mini b{font-size:7px;font-weight:600}
+.mini-city{background:linear-gradient(140deg,#8b564e,#29232c 75%)}
+.mini-orbit{background:linear-gradient(140deg,#4e648f,#1a2131 75%)}
+@media(max-width:900px){.project-stream{grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);min-height:390px}.project-stream .project-visual{height:100%;min-height:390px;padding:18px}.stream-app{max-width:680px}}
+@media(max-width:680px){.project-stream{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);min-height:0}.project-stream .project-visual{height:100%;min-height:350px;padding:8px}.project-stream .project-body{min-width:0;padding:16px 13px}.project-stream .project-body h3{font-size:20px}.project-stream .project-body>p{font-size:12px}.project-stream .feature-list{padding-left:15px;font-size:10px}.project-stream .tag-list{gap:5px}.project-stream .tag-list span{font-size:8px}.project-stream .project-links{gap:10px}.project-stream .project-links a{font-size:10px}.stream-app{border-radius:9px}.stream-top{height:34px;padding-inline:7px;gap:5px}.stream-search{display:none}.stream-logo{font-size:10px}.stream-user{width:19px;height:19px}.stream-cats{height:27px;gap:0;padding-inline:7px;font-size:7px}.stream-cats span{display:none;height:27px}.stream-cats .cat-active{display:flex}.stream-feature{min-height:165px}.stream-feature-copy{right:7px;bottom:9px;left:8px}.stream-original{font-size:5px}.stream-feature-copy h4{font-size:15px}.stream-feature-copy p{font-size:7px}.stream-play{gap:3px;padding:5px;font-size:7px}.stream-play small{display:none}.stream-feature-rating{right:5px;bottom:5px;font-size:5px}.stream-continue{padding:7px}.stream-continue-title{font-size:7px}.stream-continue-title span{font-size:6px}.stream-mini-row{grid-template-columns:1fr;gap:4px}.stream-mini{min-height:28px;padding:4px}.stream-mini span{font-size:4px}.stream-mini b{font-size:6px}}
+
+/* Match the other project cards' spacing while keeping Streamify split on desktop. */
+.project-card.project-stream{display:grid;grid-column:1/-1;grid-template-areas:"preview details";grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:stretch}
+.project-card.project-stream>.project-visual{grid-area:preview;width:100%;min-width:0;height:100%;min-height:345px;align-self:stretch}
+.project-card.project-stream>.project-body{grid-area:details;width:100%;min-width:0;height:100%;align-self:stretch}
+@media(max-width:900px){.project-card.project-stream{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}.project-card.project-stream>.project-visual{min-height:345px}}
+@media(max-width:680px){.project-card.project-stream{grid-column:auto;grid-template-areas:"preview" "details";grid-template-columns:minmax(0,1fr)}.project-card.project-stream>.project-visual{height:240px;min-height:240px}.project-card.project-stream>.project-body{height:auto;padding:19px}}
+
+/* FINAL FIX: Streamify responsive project card */
+
+.project-grid > .project-card.project-stream {
+    display: grid !important;
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr) !important;
+    grid-template-areas: "preview details";
+    align-items: stretch;
+    min-width: 0;
+}
+
+.project-grid > .project-card.project-stream > .project-visual {
+    grid-area: preview;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 345px;
+}
+
+.project-grid > .project-card.project-stream > .project-body {
+    grid-area: details;
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    padding: 22px 23px 20px;
+}
+
+/* Mobile: image above project details */
+@media (max-width: 680px) {
+    .project-grid > .project-card.project-stream {
+        grid-column: 1 / -1;
+        grid-template-columns: minmax(0, 1fr) !important;
+        grid-template-areas:
+            "preview"
+            "details";
+    }
+
+    .project-grid > .project-card.project-stream > .project-visual {
+        height: 240px;
+        min-height: 240px;
+    }
+
+    .project-grid > .project-card.project-stream > .project-body {
+        height: auto;
+        padding: 19px;
+    }
+}
+
+/* Desktop split is explicit so the preview and details cannot auto-stack. */
+@media (min-width: 681px) {
+    .project-grid > article.project-card.project-stream {
+        display: grid !important;
+        grid-column: 1 / -1;
+        grid-template-columns: minmax(0, 1.1fr) minmax(360px, .9fr) !important;
+        grid-template-areas: "preview details" !important;
+        align-items: stretch;
+    }
+
+    .project-grid > article.project-card.project-stream > .project-visual {
+        grid-area: preview !important;
+        height: 100%;
+        min-height: 345px;
+    }
+
+    .project-grid > article.project-card.project-stream > .project-body {
+        grid-area: details !important;
+        height: 100%;
+    }
+}
